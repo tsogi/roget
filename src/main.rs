@@ -91,7 +91,8 @@ fn main() {
         Rank::InfoPlusProbability => roget::Rank::InfoPlusProbability,
         Rank::ExpectedInformation => roget::Rank::ExpectedInformation,
     };
-    if args.interactive {
+    // if args.interactive {
+    if true {
         play_interactive(solver.build());
     } else {
         play(move || solver.build(), args.games);
